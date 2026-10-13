@@ -1,48 +1,48 @@
 <p align="center">
-  <img src="assets/logo.png" width="120" alt="HVAC Desktop Analyzer snowflake and circuit logo">
+  <img src="assets/logo.png" width="120" alt="Logotipo de HVAC Desktop Analyzer">
 </p>
 
 <h1 align="center">HVAC Desktop Analyzer</h1>
 
-<p align="center">Analyze HVAC measurements on a Windows or Linux desktop: import a dataset, chart it per circuit, find what is out of band and turn it into a report you can hand over.</p>
+<p align="center">Analiza mediciones de equipos HVAC en un escritorio Windows o Linux: importa un conjunto de datos, grafícalo por circuito, detecta lo que queda fuera de rango y conviértelo en un informe que puedas entregar.</p>
 
 <p align="center">
-  <a href="https://github.com/JosueJosende/hvac-desktop-analyzer/releases/latest">Download the latest installer</a> ·
-  <a href="https://github.com/JosueJosende/hvac-desktop-analyzer/releases">Release history</a> ·
-  <a href="CURRENT_RELEASE.md">Current release details</a>
+  <a href="https://github.com/JosueJosende/hvac-desktop-analyzer/releases/latest">Descargar el instalador más reciente</a> ·
+  <a href="https://github.com/JosueJosende/hvac-desktop-analyzer/releases">Historial de versiones</a> ·
+  <a href="CURRENT_RELEASE.md">Detalles de la versión actual</a>
 </p>
 
-This repository distributes the installers and the release metadata for the desktop application. It does not publish the application source, which is private.
+Este repositorio distribuye los instaladores y los metadatos de publicación de la aplicación de escritorio. No publica el código fuente, que es privado.
 
-## Downloads
+## Descargas
 
-| Platform | File | Notes |
+| Plataforma | Archivo | Notas |
 | --- | --- | --- |
-| Windows 10 or later (x64) | `HVAC-Desktop-Analyzer-<version>-win-x64.exe` | Installer. Installs for all users, so Windows asks for elevation, and you can choose the destination folder. |
-| Linux (x86_64) | `HVAC-Desktop-Analyzer-<version>-linux-x86_64.AppImage` | Portable. Make it executable and run it. |
+| Windows 10 o posterior (x64) | `HVAC-Desktop-Analyzer-<version>-win-x64.exe` | Instalador. Se instala para todos los usuarios, así que Windows pide permisos de administrador, y puedes elegir la carpeta de destino. |
+| Linux (x86_64) | `HVAC-Desktop-Analyzer-<version>-linux-x86_64.AppImage` | Portable. Dale permisos de ejecución y ejecútalo. |
 
-Both files are listed on the [releases page](https://github.com/JosueJosende/hvac-desktop-analyzer/releases). File names carry the version, so link to the release page rather than to a single asset.
+Ambos archivos aparecen en la [página de publicaciones](https://github.com/JosueJosende/hvac-desktop-analyzer/releases). El nombre incluye la versión, así que enlaza a esa página y no a un archivo concreto.
 
-## What the application does
+## Qué hace la aplicación
 
-| Capability | What it gives you |
+| Capacidad | Qué te da |
 | --- | --- |
-| Import and chart | Load a measurement file and inspect every variable and circuit on a chart, with the alarms of the analysed range beside it. |
-| Analysis | Per-variable statistics, correlations between variables and detection of values outside their expected band. |
-| Diagnostics | Review findings against the equipment, and optionally compose an AI-assisted diagnostic report. |
-| Field report | Write up purpose, technical diagnosis, actions taken, tests, observations, recommended actions and equipment state before and after. |
-| Export | Save the analysis as a standalone HTML file or as a PDF report. |
-| Tests and telemetry | Keep saved tests, recorded telemetry and annotations, and share or move them between equipment. |
-| Accounts | Work as a guest with everything stored locally, or sign in to synchronise across machines and organisations. |
-| Languages | English, Spanish and Catalan, with a dark theme. |
+| Importar y graficar | Carga un archivo de mediciones y revisa cada variable y cada circuito en una gráfica, con las alarmas del rango analizado al lado. |
+| Análisis | Estadísticas por variable, correlaciones entre variables y detección de valores fuera de su banda esperada. |
+| Diagnóstico | Contrasta los hallazgos con el equipo y, opcionalmente, redacta un informe de diagnóstico asistido por IA. |
+| Informe de campo | Redacta el objeto del informe, el diagnóstico técnico con la reproducción del fallo, las alarmas del rango analizado, la actuación realizada en campo, las pruebas y la verificación, las observaciones adicionales, las acciones recomendadas, el estado del equipo antes y después, y la conclusión. |
+| Exportación | Guarda el análisis como un archivo HTML independiente o como informe PDF. |
+| Pruebas y telemetría | Conserva las pruebas guardadas, la telemetría registrada y las anotaciones, y compártelas o muévelas entre equipos. |
+| Cuentas | Trabaja como invitado con todo almacenado en local, o inicia sesión para sincronizar entre máquinas y organizaciones. |
+| Idiomas | Inglés, español y catalán, con tema oscuro. |
 
-## Installation
+## Instalación
 
 ### Windows
 
-1. Download the `.exe` from the releases page.
-2. Run it. Windows asks for elevation because the installer is per-machine, and it offers a destination folder.
-3. The build is not code-signed, so SmartScreen may warn that the publisher is unknown. Check the SHA-256 in [CURRENT_RELEASE.md](CURRENT_RELEASE.md) first, then continue through **More info** → **Run anyway**.
+1. Descarga el `.exe` desde la página de publicaciones.
+2. Ejecútalo. Windows pedirá permisos de administrador, porque el instalador es para todos los usuarios, y te ofrecerá elegir la carpeta de destino.
+3. La compilación no está firmada digitalmente, así que SmartScreen puede avisar de que el editor es desconocido. Comprueba antes el SHA-256 en [CURRENT_RELEASE.md](CURRENT_RELEASE.md) y continúa con **Más información** → **Ejecutar de todas formas**.
 
 ### Linux
 
@@ -51,20 +51,20 @@ chmod +x HVAC-Desktop-Analyzer-<version>-linux-x86_64.AppImage
 ./HVAC-Desktop-Analyzer-<version>-linux-x86_64.AppImage
 ```
 
-The AppImage needs FUSE. On a system without it, run the same file with `--appimage-extract-and-run`.
+La AppImage necesita FUSE. En un sistema que no lo tenga, ejecuta el mismo archivo con `--appimage-extract-and-run`.
 
-## Updates
+## Actualizaciones
 
-The packaged application checks this repository when it starts and downloads a newer version automatically, verifying the SHA-512 recorded in the update metadata before it applies it. No manual download is needed to stay current.
+La aplicación empaquetada consulta este repositorio al arrancar y descarga automáticamente una versión más reciente, comprobando antes el SHA-512 registrado en los metadatos de actualización. No hace falta descargar nada a mano para estar al día.
 
-## Where your data lives
+## Dónde están tus datos
 
-The application keeps its database, configuration and logs in the per-user application data directory of your operating system. Nothing leaves the machine unless you sign in and use the cloud synchronisation features.
+La aplicación guarda su base de datos, su configuración y sus registros en el directorio de datos de aplicación de tu usuario. Nada sale de la máquina salvo que inicies sesión y uses las funciones de sincronización en la nube.
 
-## Verify what you downloaded
+## Comprueba lo que has descargado
 
-[CURRENT_RELEASE.md](CURRENT_RELEASE.md) records the size and SHA-256 of the published installers. The `latest.yml` and `latest-linux.yml` assets are the update metadata the application itself reads; they carry the SHA-512 of the file they point at.
+[CURRENT_RELEASE.md](CURRENT_RELEASE.md) registra el tamaño y el SHA-256 de los instaladores publicados. Los archivos `latest.yml` y `latest-linux.yml` son los metadatos que lee la propia aplicación; contienen el SHA-512 del archivo al que apuntan.
 
-## Scope of this repository
+## Alcance de este repositorio
 
-Installers, their block maps and the update metadata only. There is no application source here.
+Solo los instaladores y los metadatos de los que se actualiza la aplicación. Aquí no hay código fuente.
