@@ -1,7 +1,3 @@
-<p align="center">
-  <img src="assets/logo.png" width="120" alt="Logotipo de HVAC Desktop Analyzer">
-</p>
-
 <h1 align="center">HVAC Desktop Analyzer</h1>
 
 <p align="center">Analiza mediciones de equipos HVAC en un escritorio Windows o Linux: importa un conjunto de datos, grafícalo por circuito, detecta lo que queda fuera de rango y conviértelo en un informe que puedas entregar.</p>
@@ -16,25 +12,25 @@ Este repositorio distribuye los instaladores y los metadatos de publicación de 
 
 ## Descargas
 
-| Plataforma | Archivo | Notas |
-| --- | --- | --- |
-| Windows 10 o posterior (x64) | `HVAC-Desktop-Analyzer-<version>-win-x64.exe` | Instalador. Se instala para todos los usuarios, así que Windows pide permisos de administrador, y puedes elegir la carpeta de destino. |
-| Linux (x86_64) | `HVAC-Desktop-Analyzer-<version>-linux-x86_64.AppImage` | Portable. Dale permisos de ejecución y ejecútalo. |
+| Plataforma                   | Archivo                                                 | Notas                                                                                                                                  |
+| ---------------------------- | ------------------------------------------------------- | -------------------------------------------------------------------------------------------------------------------------------------- |
+| Windows 10 o posterior (x64) | `HVAC-Desktop-Analyzer-<version>-win-x64.exe`           | Instalador. Se instala para todos los usuarios, así que Windows pide permisos de administrador, y puedes elegir la carpeta de destino. |
+| Linux (x86_64)               | `HVAC-Desktop-Analyzer-<version>-linux-x86_64.AppImage` | Portable. Dale permisos de ejecución y ejecútalo.                                                                                      |
 
 Ambos archivos aparecen en la [página de publicaciones](https://github.com/JosueJosende/hvac-desktop-analyzer/releases). El nombre incluye la versión, así que enlaza a esa página y no a un archivo concreto.
 
 ## Qué hace la aplicación
 
-| Capacidad | Qué te da |
-| --- | --- |
-| Importar y graficar | Carga un archivo de mediciones y revisa cada variable y cada circuito en una gráfica, con las alarmas del rango analizado al lado. |
-| Análisis | Estadísticas por variable, correlaciones entre variables y detección de valores fuera de su banda esperada. |
-| Diagnóstico | Contrasta los hallazgos con el equipo y, opcionalmente, redacta un informe de diagnóstico asistido por IA. |
-| Informe de campo | Redacta el objeto del informe, el diagnóstico técnico con la reproducción del fallo, las alarmas del rango analizado, la actuación realizada en campo, las pruebas y la verificación, las observaciones adicionales, las acciones recomendadas, el estado del equipo antes y después, y la conclusión. |
-| Exportación | Guarda el análisis como un archivo HTML independiente o como informe PDF. |
-| Pruebas y telemetría | Conserva las pruebas guardadas, la telemetría registrada y las anotaciones, y compártelas o muévelas entre equipos. |
-| Cuentas | Trabaja como invitado con todo almacenado en local, o inicia sesión para sincronizar entre máquinas y organizaciones. |
-| Idiomas | Inglés, español y catalán, con tema oscuro. |
+| Capacidad            | Qué te da                                                                                                                                                                                                                                                                                              |
+| -------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
+| Importar y graficar  | Carga un archivo de mediciones y revisa cada variable y cada circuito en una gráfica, con las alarmas del rango analizado al lado.                                                                                                                                                                     |
+| Análisis             | Estadísticas por variable, correlaciones entre variables y detección de valores fuera de su banda esperada.                                                                                                                                                                                            |
+| Diagnóstico          | Contrasta los hallazgos con el equipo y, opcionalmente, redacta un informe de diagnóstico asistido por IA.                                                                                                                                                                                             |
+| Informe de campo     | Redacta el objeto del informe, el diagnóstico técnico con la reproducción del fallo, las alarmas del rango analizado, la actuación realizada en campo, las pruebas y la verificación, las observaciones adicionales, las acciones recomendadas, el estado del equipo antes y después, y la conclusión. |
+| Exportación          | Guarda el análisis como un archivo HTML independiente o como informe PDF.                                                                                                                                                                                                                              |
+| Pruebas y telemetría | Conserva las pruebas guardadas, la telemetría registrada y las anotaciones, y compártelas o muévelas entre equipos.                                                                                                                                                                                    |
+| Cuentas              | Trabaja como invitado con todo almacenado en local, o inicia sesión para sincronizar entre máquinas y organizaciones.                                                                                                                                                                                  |
+| Idiomas              | Inglés, español y catalán, con tema oscuro.                                                                                                                                                                                                                                                            |
 
 ## Instalación
 
